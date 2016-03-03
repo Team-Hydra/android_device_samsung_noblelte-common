@@ -75,6 +75,9 @@
 /dev/video160             0660   media      media
 /dev/media2               0660   media      media
 
+# Secure MEM driver
+/dev/s5p-smem             0660   system     system
+
 # MIF
 /dev/block/platform/15570000.ufs/by-name/RADIO     0660   system     radio
 /dev/block/platform/15570000.ufs/by-name/DNT     0660   system     system
@@ -95,8 +98,16 @@
 /sys/devices/14d30000.spi/spi_master/spi1/spi1.0/iio:device*    buffer/length       0660    system    system
 /sys/bus/iio/devices/iio:device*    0664   system     radio
 
+# MobiCore
+/dev/mobicore             0700   system     system
+/dev/mobicore-user        0666   radio     system
+
+# Secure MEM driver
+/dev/s5p-smem             0660   system     system
+
 # FINGERPRINT
 /dev/vfsspi               0660   system     system
+/dev/esfp0                0660   system     system
 
 # Broadcom Sensorhub Bridge Driver
 /dev/bbd_sensor           0660   system     system
@@ -107,10 +118,24 @@
 /dev/bbd_patch            0660   system     system
 /dev/ttyBCM*              0660   system     system
 
+/sys/devices/platform/bbd.0/BBD				0220	system	system
+/sys/devices/platform/bbd.0/DEV				0220	system	system
+/sys/devices/platform/bbd.0/ESW				0220	system	system
+/sys/devices/platform/bbd.0/baud			0660	system	system
+/sys/devices/platform/bbd.0/debug			0660	system	system
+/sys/devices/platform/bbd.0/buf				0440	system	system
+/sys/devices/platform/bbd.0/pl				0440	system	system
+/sys/devices/platform/bbd.0/passthru		0440	system	system
+/sys/devices/platform/bbd.0/ssi_xfer		0440	system	system
+/sys/devices/platform/bbd.0/ssi_count		0440	system	system
+/sys/devices/platform/bbd.0/ssi_trace		0440	system	system
+
 # QCOM MIF
 /dev/subsys_esoc*         0660   system     radio
 /dev/mhi_pipe_*             0660   radio      radio
 /dev/esoc-*             0660   system    radio
+/dev/ks_hsic_bridge       0660   system     system
+/dev/efs_hsic_bridge      0660   system     system
 
 # Reactivation lock
 /dev/block/platform/15570000.ufs/by-name/STEADY    0660    system    system
