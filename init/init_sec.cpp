@@ -49,41 +49,41 @@ void vendor_load_properties()
     property_get("ro.bootloader", bootloader);
 
     if (strstr(bootloader, "G920S")) {
-        /* zeroflteskt */
-        property_set("ro.build.fingerprint", "samsung/zeroflteskt/zeroflteskt:5.1.1/LMY47X/G920SXXS3COK5:user/release-keys");
-        property_set("ro.build.description", "zeroflteskt-user 5.1.1 LMY47X G920SXXS3COK5 release-keys");
+        /* noblelteskt */
+        property_set("ro.build.fingerprint", "samsung/noblelteskt/noblelteskt:5.1.1/LMY47X/G920SXXS3COK5:user/release-keys");
+        property_set("ro.build.description", "noblelteskt-user 5.1.1 LMY47X G920SXXS3COK5 release-keys");
         property_set("ro.product.model", "SM-G920S");
-        property_set("ro.product.device", "zeroflteskt");
+        property_set("ro.product.device", "noblelteskt");
     } else if (strstr(bootloader, "G920K")) {
-        /* zerofltektt */
-        property_set("ro.build.fingerprint", "samsung/zerofltektt/zerofltektt:5.1.1/LMY47X/G920KXXS3COK5:user/release-keys");
-        property_set("ro.build.description", "zerofltektt-user 5.1.1 LMY47X G920KXXS3COK5 release-keys");
+        /* nobleltektt */
+        property_set("ro.build.fingerprint", "samsung/nobleltektt/nobleltektt:5.1.1/LMY47X/G920KXXS3COK5:user/release-keys");
+        property_set("ro.build.description", "nobleltektt-user 5.1.1 LMY47X G920KXXS3COK5 release-keys");
         property_set("ro.product.model", "SM-G920K");
-        property_set("ro.product.device", "zerofltektt");
+        property_set("ro.product.device", "nobleltektt");
     } else if (strstr(bootloader, "G920L")) {
-        /* zerofltelgt */
-        property_set("ro.build.fingerprint", "samsung/zerofltelgt/zerofltelgt:5.1.1/LMY47X/G920LXXS3COK5:user/release-keys");
-        property_set("ro.build.description", "zerofltelgt-user 5.1.1 LMY47X G920LXXS3COK5 release-keys");
+        /* nobleltelgt */
+        property_set("ro.build.fingerprint", "samsung/nobleltelgt/nobleltelgt:5.1.1/LMY47X/G920LXXS3COK5:user/release-keys");
+        property_set("ro.build.description", "nobleltelgt-user 5.1.1 LMY47X G920LXXS3COK5 release-keys");
         property_set("ro.product.model", "SM-G920L");
-        property_set("ro.product.device", "zerofltelgt");
+        property_set("ro.product.device", "nobleltelgt");
     } else if (strstr(bootloader, "G920P")) {
-        /* zerofltespr */
-        property_set("ro.build.fingerprint", "samsung/zerofltespr/zerofltespr:5.1.1/LMY47X/G920PVPU3BOL1:user/release-keys");
-        property_set("ro.build.description", "zerofltespr-user 5.1.1 LMY47X G920PVPU3BOL1 release-keys");
+        /* nobleltespr */
+        property_set("ro.build.fingerprint", "samsung/nobleltespr/nobleltespr:5.1.1/LMY47X/G920PVPU3BOL1:user/release-keys");
+        property_set("ro.build.description", "nobleltespr-user 5.1.1 LMY47X G920PVPU3BOL1 release-keys");
         property_set("ro.product.model", "SM-G920P");
-        property_set("ro.product.device", "zerofltespr");
+        property_set("ro.product.device", "nobleltespr");
     } else if (strstr(bootloader, "G920I")) {
-        /* zerofltexx */
-        property_set("ro.build.fingerprint", "samsung/zerofltexx/zerofltexx:5.1.1/LMY47X/G920IXXS3COK5:user/release-keys");
-        property_set("ro.build.description", "zerofltexx-user 5.1.1 LMY47X G920IXXS3COK5 release-keys");
+        /* nobleltexx */
+        property_set("ro.build.fingerprint", "samsung/nobleltexx/nobleltexx:5.1.1/LMY47X/G920IXXS3COK5:user/release-keys");
+        property_set("ro.build.description", "nobleltexx-user 5.1.1 LMY47X G920IXXS3COK5 release-keys");
         property_set("ro.product.model", "SM-G920I");
-        property_set("ro.product.device", "zerofltexx");
+        property_set("ro.product.device", "nobleltexx");
     } else {
-        /* zerofltexx */
-        property_set("ro.build.fingerprint", "samsung/zerofltexx/zerofltexx:5.1.1/LMY47X/G920FXXS3COK5:user/release-keys");
-        property_set("ro.build.description", "zerofltexx-user 5.1.1 LMY47X G920FXXS3COK5 release-keys");
-        property_set("ro.product.model", "SM-G920F");
-        property_set("ro.product.device", "zerofltexx");
+        /* nobleltexx */
+        property_set("ro.build.fingerprint", "samsung/nobleltetmo/nobleltetmo:5.1.1/LMY47X/G920FXXS3COK5:user/release-keys");
+        property_set("ro.build.description", "nobleltetmo-user 5.1.1 LMY47X G920FXXS3COK5 release-keys");
+        property_set("ro.product.model", "SM-N920T");
+        property_set("ro.product.device", "nobleltetmo");
     }
 
     property_get("ro.product.device", device);

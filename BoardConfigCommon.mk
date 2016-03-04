@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/zero-common
+LOCAL_PATH := device/samsung/noblelte-common
 
 BOARD_VENDOR := samsung
 
@@ -80,10 +80,6 @@ BOARD_USES_DT := true
 BOARD_HDMI_INCAPABLE := true
 BOARD_USES_GSC_VIDEO := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_sec
-TARGET_UNIFIED_DEVICE := true
-
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -92,7 +88,7 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x10008000 --ramdisk_offset 0x11000000 --tags_offset 0x10000100 --dt device/samsung/$(TARGET_DEVICE)/dt.img
-TARGET_KERNEL_SOURCE := kernel/samsung/exynos7420
+TARGET_KERNEL_SOURCE := kernel/samsung/noblelte
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 # NFC
@@ -141,10 +137,7 @@ BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
-# Twrp
-ifneq ($(strip $(wildcard $(TOP)/bootable/recovery/variables.h)),)
--include device/samsung/zero-common/twrp.mk
-endif
+
 
 # WEBGL
 ENABLE_WEBGL := true
@@ -163,4 +156,4 @@ WIFI_DRIVER_FW_PATH_AP           := "/system/etc/wifi/bcmdhd_apsta.bin"
 WIFI_BAND                        := 802_11_ABG
 
 # inherit from the proprietary version
--include vendor/samsung/zero-common/BoardConfigVendor.mk
+-include vendor/samsung/noblelte-common/BoardConfigVendor.mk
